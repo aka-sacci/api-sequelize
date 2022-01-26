@@ -15,7 +15,7 @@ Run the migrations and seeders
 >npx sequelize-cli db:migrate:undo:all
 
 Run the server
->npm run
+>npm run dev
 
 *To better use, i recommend the use of some http request tool, like Insomnia, Postman, ThunderClient etc...
 
