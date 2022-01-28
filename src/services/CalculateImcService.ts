@@ -54,12 +54,12 @@ class CalculateImcService{
 
         if(wantToRegister == false){
             return {
-            imc: imc,
-            calculatedAt: calculatedAt,
-            ImcMessage: resultGetImcDescription,
-            ImcRegister: {
-                success: null
-            }
+                imc: imc,
+                calculatedAt: calculatedAt,
+                ImcMessage: resultGetImcDescription,
+                ImcRegister: {
+                    success: null
+                }
             }  
         }
         else {

@@ -30,7 +30,7 @@ class CalculateImcController {
         const wantToRegister = req.body.wantToRegister
         const newCalc = await calculateImcService.do({weight, height, calculatedAt, wantToRegister, email})
         const StatusCode = checkStatusCode(newCalc.ImcMessage.success, newCalc.ImcRegister.success)
-        res.status(StatusCode).json(newCalc)
+        return res.status(StatusCode).json(newCalc)
   }
 }
 

@@ -29,7 +29,7 @@ class getResultController {
         const email = req.params.email
         const response = await getResultService.do({email})
         const statusCode = checkStatusCode(response.success, response.blank)
-        res.status(statusCode).json(response)
+        return res.status(statusCode).json(response)
         
     }
 }

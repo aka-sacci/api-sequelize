@@ -7,12 +7,12 @@
     "dialect": "mysql"
   },
   "test": {
-    "username": "",
+    "username": "sqlite",
     "password": "",
     "database": "db_imc_test",
     "host": "127.0.0.1",
     "dialect": "sqlite",
-    "storage": "./src/database" 
+    "storage": "./src/database/database.sqlite" 
   },
   "production": {
     "username": "root",
